@@ -19,10 +19,10 @@ builder.Services.AddControllers(); // מוסיף את התמיכה בבקרי MV
 
 var app = builder.Build(); // בונה את האפליקציה
 
-if (app.Environment.IsDevelopment()) // בודק אם האפליקציה נמצאת בסביבת פיתוח
-{
+//if (app.Environment.IsDevelopment()) // בודק אם האפליקציה נמצאת בסביבת פיתוח
+//{
     // הסר את השורות הקשורות ל-Swagger
-}
+//}
 
 // CORS
 app.UseCors("AllowAll"); // מפעיל את מדיניות ה-CORS שנוצרה
@@ -56,5 +56,5 @@ app.MapPut("/update", async (ToDoDbContext db, Item updatedItem) => // מפה א
         item.IsComplete = updatedItem.IsComplete; // עדכן שדות לפי הצורך
     await db.SaveChangesAsync(); // שומר את השינויים
 });
-
+app.MapGet("/", () => "good running!!!");
 app.Run(); // מפעיל את האפליקציה

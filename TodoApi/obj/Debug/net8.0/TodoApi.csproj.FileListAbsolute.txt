@@ -205,8 +205,6 @@ C:\Users\משתמש חדש\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\T
 C:\Users\משתמש חדש\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\ref\TodoApi.dll
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\bin\Debug\net8.0\appsettings.json
-C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\bin\Debug\net8.0\TodoApi\obj\project.assets.json
-C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\bin\Debug\net8.0\TodoApi\obj\TodoApi.csproj.nuget.dgspec.json
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\bin\Debug\net8.0\TodoApi.exe
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\bin\Debug\net8.0\TodoApi.deps.json
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\bin\Debug\net8.0\TodoApi.runtimeconfig.json
