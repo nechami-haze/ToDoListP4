@@ -27,10 +27,17 @@ var app = builder.Build(); // בונה את האפליקציה
 // CORS
 app.UseCors("AllowAll"); // מפעיל את מדיניות ה-CORS שנוצרה
 
-app.MapGet("/", async (ToDoDbContext db) => // מפה את הבקשה GET לשורש
+app.MapGet("/", async (ToDoDbContext db) =>
 {
-    return await db.Items.ToListAsync(); // מחזיר את כל הפריטים במסד הנתונים
+    var items = await db.Items.ToListAsync();
+    return new { Message = "good running!!!", Items = items }; // מחזיר גם את המסר וגם את הפריטים
 });
+
+
+///app.MapGet("/", async (ToDoDbContext db) => // מפה את הבקשה GET לשורש
+//{
+ //   return await db.Items.ToListAsync(); // מחזיר את כל הפריטים במסד הנתונים
+//});
 
 // app.MapGet("/get", () => "getAll"); // (מופעל אם נדרש) מפה בקשה GET נוספת
 
@@ -56,5 +63,5 @@ app.MapPut("/update", async (ToDoDbContext db, Item updatedItem) => // מפה א
         item.IsComplete = updatedItem.IsComplete; // עדכן שדות לפי הצורך
     await db.SaveChangesAsync(); // שומר את השינויים
 });
-app.MapGet("/", () => "good running!!!");
+//app.MapGet("/", () => "good running!!!");
 app.Run(); // מפעיל את האפליקציה

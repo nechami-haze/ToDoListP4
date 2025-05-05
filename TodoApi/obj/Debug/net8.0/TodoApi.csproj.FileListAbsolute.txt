@@ -291,7 +291,6 @@ C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\obj\Debug
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\TodoApi.csproj.CoreCompileInputs.cache
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\TodoApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\TodoApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\TodoApi.sourcelink.json
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\משתמש חדש\OneDrive\Desktop\פרקטי4 חדש\TodoApi\obj\Debug\net8.0\staticwebassets\msbuild.TodoApi.Microsoft.AspNetCore.StaticWebAssets.props

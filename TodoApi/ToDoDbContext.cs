@@ -22,8 +22,10 @@ public partial class ToDoDbContext : DbContext
     //     => optionsBuilder.UseMySql("name=ToDoDB", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.41-mysql"));
 protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 {
-    var connectionString = "server=localhost;user=root;password=1234;database=ToDoDB"; // או קרא את זה מהקונפיגורציה
-    optionsBuilder.UseMySql(connectionString, Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.41-mysql"));
+        //var connectionString = "server=localhost;user=root;password=1234;database=ToDoDB"; // או קרא את זה מהקונפיגורציה
+        var connectionString = "server=bc4gjemdlmufk3sbiggp-mysql.services.clever-cloud.com;user=uduspldyjrnyqcys;password=CsyApEW2ECuxyiuDhH9j;database=bc4gjemdlmufk3sbiggp"; // או קרא את זה מהקונפיגורציה
+
+        optionsBuilder.UseMySql(connectionString, Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.41-mysql"));
 }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
