@@ -30,5 +30,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://todolistp4ss.onrender.com"
+  "proxy": "http://localhost:5099/"
+   // "proxy": "process.env.REACT_APP_API_URL"
+
 }

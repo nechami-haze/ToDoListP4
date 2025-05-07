@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = "https://todolistp4ss.onrender.com";
+// axios.defaults.baseURL = "http://localhost:5099/";
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+
 
 export default {
   getTasks: async () => {
