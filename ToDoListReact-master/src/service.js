@@ -28,19 +28,44 @@ export default {
   //   }
   // },
   
+  // getTasks: async () => {
+  //   try {
+  //     const result = await axios.get(``);
+  //     console.log("Data received from API:", result.data); // לוג של הנתונים שהתקבלו
+  //     console.log("Response status:", result.status); // לוג של הסטטוס של הבקשה
+  //     return result.data.items || []; // מחזיר את המערך מתוך items, או מערך ריק אם הוא לא קיים
+  //   } catch (err) {
+  //     console.error("Error fetching data from API:", err); // לוג של השגיאה במקרה של בעיה
+  //     return []; // מחזיר מערך ריק במקרה של שגיאה
+  //   }
+  // },
+  
   getTasks: async () => {
     try {
+      // בודק אם יש משימות שמורות ב-localStorage
+      const savedTasks = localStorage.getItem('tasks');
+      if (savedTasks) {
+        console.log("Loading tasks from localStorage:", JSON.parse(savedTasks));
+        return JSON.parse(savedTasks); // מחזיר את המשימות השמורות
+      }
+  
       const result = await axios.get(``);
       console.log("Data received from API:", result.data); // לוג של הנתונים שהתקבלו
       console.log("Response status:", result.status); // לוג של הסטטוס של הבקשה
-      return result.data.items || []; // מחזיר את המערך מתוך items, או מערך ריק אם הוא לא קיים
+  
+      // אם יש משימות, שומר אותן ב-localStorage
+      if (result.data.items && result.data.items.length > 0) {
+        localStorage.setItem('tasks', JSON.stringify(result.data.items));
+        return result.data.items; // מחזיר את המערך מתוך items
+      }
+  
+      return []; // מחזיר מערך ריק אם אין משימות
     } catch (err) {
       console.error("Error fetching data from API:", err); // לוג של השגיאה במקרה של בעיה
       return []; // מחזיר מערך ריק במקרה של שגיאה
     }
   },
   
-
 
   addTask: async (name) => {
     const item = { name: name };
